@@ -1980,3 +1980,19 @@ p.testimonials-text {
 	}
 	
 }
+
+.social-icons {
+    display: flex; /* Para alinear horizontalmente los íconos */
+    align-items: center; /* Alinea verticalmente los íconos con el menú */
+    margin-top: 10px; /* Agrega espacio entre los íconos y el menú */
+}
+
+.social-icons a {
+    margin-left: 10px; /* Espacio entre los íconos */
+    font-size: 18px; /* Tamaño de los íconos */
+}
+
+/* Estilos adicionales para el menú si es necesario */
+.navbar-nav {
+    /* Agregar estilos según sea necesario */
+}
