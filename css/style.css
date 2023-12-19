@@ -1996,3 +1996,23 @@ p.testimonials-text {
 .navbar-nav {
     /* Agregar estilos según sea necesario */
 }
+
+.features-list-hero {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Alineación del texto en el centro */
+}
+
+.features-list-hero li {
+    display: flex;
+    align-items: center; /* Alineación vertical del contenido */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+}
+
+.features-list-hero li i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.features-list-hero li span {
+    display: block; /* Hace que el texto se muestre en una línea */
+}
