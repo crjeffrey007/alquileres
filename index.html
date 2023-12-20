@@ -109,16 +109,23 @@
     
 <!--begin home_wrapper -->
 <section id="home_wrapper" class="home-wrapper">
-    <!--begin gradient_overlay -->
-    <div class="gradient_overlay"></div>
-    <!--end gradient_overlay -->
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay loop muted class="sponsor">
+            <source src="video/video-lg.mp4" type="video/mp4">
+            <!-- Agrega más fuentes de video si es necesario -->
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="gradient_overlay"></div>
+    </div>
+    <!-- End Video Background -->
 
     <!--begin container-->
     <div class="container home-wrappe-inside">
         <!--begin row-->
         <div class="row margin-bottom-30">
             <!--begin col-md-6-->
-            <div class="col-md-6 padding-top-20">
+            <div class="col-md-6 padding-top-20 text-center text-md-left">
                 <h1 class="home-title wow fadeIn" data-wow-delay="0.25s">Alquileres CR</h1>
                 <ul class="features-list-hero">
                     <li class="wow fadeIn" data-wow-delay="0.5s">
@@ -138,17 +145,12 @@
     </div>
     <!--end container-->
 
-    <!-- Video Background -->
-    <div class="video-container">
-        <video autoplay loop muted class="sponsor">
-            <source src="video/video-lg.mp4" type="video/mp4">
-            <!-- Agrega más fuentes de video si es necesario -->
-            Tu navegador no soporta videos HTML5.
-        </video>
-    </div>
-    <!-- End Video Background -->
+    <!-- Fallback Image -->
+    <img src="images/fallback-image.jpg" class="fallback-image" alt="Fallback Image" />
+    <!-- End Fallback Image -->
 </section>
 <!--end home_wrapper -->
+
     
     <!--begin section-grey-->
     <div class="section-grey sponsors-padding">
