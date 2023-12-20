@@ -2000,21 +2000,24 @@ p.testimonials-text {
 /* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .swiper-slide-caption {
-    padding: 20px; /* Agrega espacio interno para el texto */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    color: #fff; /* Texto en color blanco */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%; /* Asegura que el texto ocupe todo el ancho */
+    text-align: center; /* Centra el texto */
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
   }
-  
-  /* Estilos para el video de fondo en dispositivos móviles */
+
+  .video-container video,
   .swiper-slide-bg {
-    display: none; /* Oculta la imagen de respaldo en dispositivos móviles */
+    display: none;
   }
 }
 
-/* Estilos para el video y la imagen de respaldo */
+/* Estilos generales */
 .video-container {
   position: relative;
-  height: 100vh; /* Altura del video, ajustable según tu diseño */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -2025,34 +2028,24 @@ p.testimonials-text {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajustar el video y la imagen al contenedor */
+  object-fit: cover;
 }
 
-/* Estilos para el texto */
 .swiper-slide-caption {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1; /* Asegura que el texto esté por encima del video */
+  z-index: 1;
+  width: 80%; /* Ajusta el ancho del contenedor de texto según el diseño */
+  text-align: center; /* Centra el texto */
 }
 
-.swiper-slide-caption .container {
-  width: 100%;
-  max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
-}
-
+/* Puedes ajustar los tamaños de fuente y otros estilos según tu diseño */
 .swiper-slide-caption h1 {
-  font-size: 40px; /* Tamaño del título, ajustable según tu diseño */
+  font-size: 2.5rem;
 }
 
 .swiper-slide-caption h5 {
-  font-size: 18px; /* Tamaño del subtítulo, ajustable según tu diseño */
-}
-
-/* Agrega estilos para la paginación y la navegación si es necesario */
-.swiper-pagination,
-.swiper-button-prev,
-.swiper-button-next {
-  /* Estilos para la paginación y los botones de navegación */
+  font-size: 1rem;
 }
