@@ -1997,11 +1997,39 @@ p.testimonials-text {
     /* Agregar estilos según sea necesario */
 }
 
+/* Estilos para el contenedor del video */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura del video, ajustable según tu diseño */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar el video al contenedor */
+}
+
+/* Estilos para los textos e íconos */
+.home-wrapper {
+    position: relative;
+}
+
+.home-wrappe-inside {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima del video */
+}
+
 .features-list-hero {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
+    margin-top: 20px; /* Espacio entre el título y la lista de íconos */
 }
 
 .features-list-hero li {
@@ -2017,4 +2045,17 @@ p.testimonials-text {
 
 .features-list-hero li:last-child {
     margin-bottom: 0; /* Eliminar el espacio después del último ícono con texto */
+}
+
+/* Estilos adicionales para mejorar el diseño responsivo */
+@media (max-width: 768px) {
+    .home-wrapper {
+        height: auto; /* Altura automática en dispositivos móviles */
+    }
+    .video-container {
+        height: 300px; /* Altura ajustable para dispositivos móviles */
+    }
+    .features-list-hero {
+        text-align: center; /* Centra los íconos y el texto en dispositivos móviles */
+    }
 }
