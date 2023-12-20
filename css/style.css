@@ -2000,19 +2000,21 @@ p.testimonials-text {
 .features-list-hero {
     list-style: none;
     padding: 0;
-    text-align: center; /* Alineación del texto en el centro */
+    display: flex;
+    flex-direction: column;
 }
 
 .features-list-hero li {
     display: flex;
-    align-items: center; /* Alineación vertical del contenido */
-    margin-bottom: 10px; /* Espacio entre los elementos */
+    align-items: center;
+    margin-bottom: 10px; /* Espaciado entre cada ícono con texto */
 }
 
-.features-list-hero li i {
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+.features-list-hero i {
+    font-size: 24px; /* Tamaño del ícono */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
 }
 
-.features-list-hero li span {
-    display: block; /* Hace que el texto se muestre en una línea */
+.features-list-hero li:last-child {
+    margin-bottom: 0; /* Eliminar el espacio después del último ícono con texto */
 }
